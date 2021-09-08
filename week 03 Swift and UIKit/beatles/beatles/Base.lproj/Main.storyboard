@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="beatles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xKE-Qn-yCr">
+                                <rect key="frame" x="20" y="50" width="280" height="468"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ERD-8g-WeY">
+                                        <rect key="frame" x="65" y="0.0" width="150" height="219"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beatles_abbey_road" translatesAutoresizingMaskIntoConstraints="NO" id="dib-OP-P9H">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="177"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Beatles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyr-cA-yyY">
+                                                <rect key="frame" x="30" y="197" width="90" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="NEh-sp-kYc"/>
+                                                    <constraint firstAttribute="width" constant="100" id="R7d-ao-2Yg">
+                                                        <variation key="heightClass=compact-widthClass=compact" constant="260"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="R7d-ao-2Yg"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="R7d-ao-2Yg"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6F6-hG-Q8w">
+                                        <rect key="frame" x="49" y="249" width="182.5" height="219"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-gm-UDo">
+                                                <rect key="frame" x="0.0" y="0.0" width="182.5" height="32"/>
+                                                <segments>
+                                                    <segment title="Early 60s"/>
+                                                    <segment title="Late 60s"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="changeInfo:" destination="vXZ-lx-hvc" eventType="valueChanged" id="LTs-Hn-iW8"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="acc-xK-SaS">
+                                                <rect key="frame" x="0.0" y="94.5" width="182.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalization" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKD-4F-nxM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AdS-4K-Oyn">
+                                                        <rect key="frame" x="133.5" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="updateFont:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Vml-46-QoL"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wu4-Cc-AsA">
+                                                <rect key="frame" x="0.0" y="189" width="182.5" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-7b-qJs">
+                                                        <rect key="frame" x="0.0" y="5" width="0.0" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="6" maxValue="22" translatesAutoresizingMaskIntoConstraints="NO" id="s8L-kb-bCI">
+                                                        <rect key="frame" x="18" y="0.0" width="166.5" height="31"/>
+                                                        <connections>
+                                                            <action selector="changeFontSize:" destination="vXZ-lx-hvc" eventType="valueChanged" id="oIw-Wv-xwZ"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="60"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GGb-as-YA3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GGb-as-YA3" firstAttribute="trailing" secondItem="xKE-Qn-yCr" secondAttribute="trailing" constant="20" id="2hM-zY-8Td"/>
+                            <constraint firstItem="xKE-Qn-yCr" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Cwz-u4-Dsn"/>
+                            <constraint firstItem="xKE-Qn-yCr" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="ISi-Ls-Yze"/>
+                            <constraint firstItem="GGb-as-YA3" firstAttribute="bottom" secondItem="xKE-Qn-yCr" secondAttribute="bottom" constant="50" id="PGr-6B-Uui"/>
+                            <constraint firstItem="xKE-Qn-yCr" firstAttribute="top" secondItem="GGb-as-YA3" secondAttribute="top" constant="50" id="QnE-YI-o7t"/>
+                            <constraint firstItem="xKE-Qn-yCr" firstAttribute="leading" secondItem="GGb-as-YA3" secondAttribute="leading" constant="20" id="a5d-pY-qjt"/>
+                            <constraint firstItem="xKE-Qn-yCr" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="gDb-mU-KzF"/>
+                            <constraint firstItem="xKE-Qn-yCr" firstAttribute="leading" secondItem="GGb-as-YA3" secondAttribute="leading" constant="20" id="iLi-nR-oXc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Cwz-u4-Dsn"/>
+                                <exclude reference="ISi-Ls-Yze"/>
+                                <exclude reference="iLi-nR-oXc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="2hM-zY-8Td"/>
+                                <include reference="Cwz-u4-Dsn"/>
+                                <include reference="ISi-Ls-Yze"/>
+                                <exclude reference="QnE-YI-o7t"/>
+                                <exclude reference="a5d-pY-qjt"/>
+                                <exclude reference="gDb-mU-KzF"/>
+                                <exclude reference="iLi-nR-oXc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="beatlesImage" destination="dib-OP-P9H" id="mpW-w5-pjD"/>
+                        <outlet property="capitalSwitch" destination="AdS-4K-Oyn" id="rJT-4e-dqQ"/>
+                        <outlet property="fontSizeLabel" destination="O5s-7b-qJs" id="bFN-x0-zSm"/>
+                        <outlet property="imageControl" destination="WM5-gm-UDo" id="FRX-rA-C50"/>
+                        <outlet property="titleLabel" destination="Hyr-cA-yyY" id="RCO-In-WqA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="116.19718309859155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beatles_abbey_road" width="150.33332824707031" height="150.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
