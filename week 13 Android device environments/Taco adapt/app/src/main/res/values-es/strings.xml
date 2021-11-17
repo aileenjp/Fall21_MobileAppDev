@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taco</string>
+    <string name="heading">Taco Martes</string>
+    <string name="chickenTaco">pollo</string>
+    <string name="steakTaco">filete</string>
+    <string name="veggieTaco">vegetal</string>
+    <string name="tacoButton">Crear taco</string>
+    <string name="salsaCheckbox">salsa</string>
+    <string name="cheeseCheckbox">queso</string>
+    <string name="guacCheckbox">guacamole</string>
+    <string name="sourcreamCheckbox">cCrea agria</string>
+    <string name="gluten_free">sin gluten</string>
+    <string name="locationButton">Encontrar tacos</string>
+    <string-array name="location">
+        <item>the Hill</item>
+        <item>29th St.</item>
+        <item>Pearl St.</item>
+    </string-array>
+    <string name="title_activity_taco">TacoActivity</string>
+    <string name="feedbackHint">Retroalimentación</string>
+    <string name="snackbarFillingMessage">Seleccione un relleno </string>
+    <string name="withFilling">con</string>
+    <string name="atLocation">a </string>
+    <string name="message">Te gustaría</string>
+    <string name="tacoShopMessage">Deberías conseguir tacos en</string>
+
+
+</resources>

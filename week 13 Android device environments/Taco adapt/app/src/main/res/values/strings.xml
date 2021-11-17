@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Taco</string>
+    <string name="heading">Taco Tuesday</string>
+    <string name="chickenTaco">chicken</string>
+    <string name="steakTaco">steak</string>
+    <string name="veggieTaco">veggie</string>
+    <string name="tacoButton">Create taco</string>
+    <string name="salsaCheckbox">salsa</string>
+    <string name="cheeseCheckbox">cheese</string>
+    <string name="guacCheckbox">guacamole</string>
+    <string name="sourcreamCheckbox">sour cream</string>
+    <string name="gluten_free">gluten-free</string>
+    <string name="locationButton">Find tacos</string>
+    <string-array name="location">
+        <item>the Hill</item>
+        <item>29th St.</item>
+        <item>Pearl St.</item>
+    </string-array>
+    <string name="title_activity_taco">TacoActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+      <string name="hello_first_fragment">Hello first fragment</string>
+      <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+      <string name="feedbackHint">Feedback</string>
+  <string name="snackbarFillingMessage">Please select a filling </string>
+  <string name="withFilling">with</string>
+  <string name="atLocation">at </string>
+  <string name="message">You\'d like</string>
+  <string name="tacoShopMessage">You should get tacos at</string>
+
+</resources>
