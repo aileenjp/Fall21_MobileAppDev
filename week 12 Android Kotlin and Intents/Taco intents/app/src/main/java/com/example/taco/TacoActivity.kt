@@ -67,13 +67,8 @@ class TacoActivity : AppCompatActivity() {
         intent.action = Intent.ACTION_VIEW
         intent.data = tacoShopUrl?.let{ Uri.parse(tacoShopUrl)}
 
-        // Verify that the intent will resolve to an activity
-        if (intent.resolveActivity(packageManager) != null) {
-            // start activity
-            startActivity(intent)
-        }else {
-            //message
-        }
+        // start activity
+        startActivity(intent)
     }
 
 //    override fun onSupportNavigateUp(): Boolean {
